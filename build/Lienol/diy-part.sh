@@ -4,6 +4,8 @@
 # 自行拉取插件之前请SSH连接进入固件配置里面确认过没有你要的插件再单独拉取你需要的插件
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 
+git clone -b helloworld https://github.com/281677160/openwrt-package.git package_lyh
+cp -r package_lyh/luci-app-ssr-plus package/
 
 # 后台IP设置
 export Ipv4_ipaddr="10.0.0.252"            # 修改openwrt后台地址(填0为关闭)
